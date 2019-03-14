@@ -1,0 +1,13 @@
+<h1>Top Technology headlines from United States</h1>
+
+<ul>
+  <li *ngFor="let n of news">
+    <a href= '{{ n.url }}' target="_blank"> {{ n.title }} </a>
+
+    <ul>
+      <li>{{ n.description }}</li>
+      <li><img src = '{{n.urlToImage}}' style='height: 250px; width: 450px'></li>
+      <li style='font-size: 0.7em' > Source: {{ n.source.name }}</li>
+    </ul>
+  </li>
+</ul>

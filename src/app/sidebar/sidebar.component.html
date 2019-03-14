@@ -1,0 +1,24 @@
+<nav>
+  <ul>
+    <li>
+      <a routerLink="" [class.activated]="currentUrl == '/'">
+        <i class="fas fa-globe-americas">   All</i> 
+      </a>
+    </li>
+    <li>
+      <a routerLink="sports" [class.activated]="currentUrl == '/sports'">
+        <i class="fas fa-basketball-ball">   Sports</i>
+      </a>
+    </li>
+    <li>
+      <a routerLink="business" [class.activated]="currentUrl == '/business'">
+        <i class="fas fa-business-time">   Business</i>
+      </a>
+    </li>
+    <li>
+        <a routerLink="technology" [class.activated]="currentUrl == '/technology'">
+          <i class="fas fa-database"> Technology</i>
+        </a>
+      </li>
+  </ul>
+</nav>
